@@ -1,12 +1,13 @@
-import { Navbar } from "@/components/Navbar/index";
 import React from "react";
+//
+import { Navbar } from "@/components/Navbar/index";
+import { Home } from "./components/Home";
 import { SelectedPage } from "./shared/types";
 //
 //
 //
 //
 //
-
 function App() {
   // за замовчуванням вибрано дім
   const [selectedPage, setSelectedPage] = React.useState<SelectedPage>(
@@ -33,7 +34,10 @@ function App() {
     <div className="app bg-gray-20">
       <Navbar
         isTopOfPage={isTopOfPage}
-        selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+        selectedPage={selectedPage}
+        setSelectedPage={setSelectedPage} />
+      <Home
+        setSelectedPage={setSelectedPage} />
     </div>
   );
 }
