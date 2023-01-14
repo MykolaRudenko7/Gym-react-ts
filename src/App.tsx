@@ -22,7 +22,9 @@ function App() {
         setIsTopOfPage(true)
         setSelectedPage(SelectedPage.Home)
       }
-      setIsTopOfPage(false);
+      if (window.scrollY !== 0) {
+        setIsTopOfPage(false);
+      }
     }
     window.addEventListener('scroll', handleScoll)
 
