@@ -1,7 +1,8 @@
 import React from "react";
 //
 import { Navbar } from "@/components/Navbar/index";
-import { Home } from "./components/Home";
+import { Home } from "@/components/Home";
+import { Benefits } from "@/components/Benefits";
 import { SelectedPage } from "./shared/types";
 //
 //
@@ -40,6 +41,7 @@ function App() {
         setSelectedPage={setSelectedPage} />
       <Home
         setSelectedPage={setSelectedPage} />
+        <Benefits setSelectedPage={setSelectedPage} />
     </div>
   );
 }
