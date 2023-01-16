@@ -15,7 +15,7 @@ import { SelectedPage } from "@/shared/types";
 //
 //
 //
-type HomeProps = {
+export interface HomeProps {
 	setSelectedPage: (value: SelectedPage) => void;
 }
 

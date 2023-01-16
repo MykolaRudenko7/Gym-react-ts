@@ -1,15 +1,18 @@
 import { BenefitType, SelectedPage } from '@/shared/types';
 import { motion } from 'framer-motion';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { HomeProps } from '../Home';
 //
 //
 //
 //
 //
 //
-type BenefitProps = {
-	setSelectedPage: (value: SelectedPage) => void;
-} & BenefitType
+interface BenefitProps extends HomeProps {
+	icon: JSX.Element;
+	title: string;
+	description: string;
+}
 //
 const childVariant = {
 	hidden: { opasity: 0, scale: 0.9 },

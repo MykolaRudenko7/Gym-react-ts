@@ -5,14 +5,33 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html,
 body,
 #root,
 .app {
-	height: 100%;
-	width: 100%;
-	font-family: 'DM Sans', sans-serif;
-	/* with tw config */
-	@apply text-gray-500;
+  height: 100%;
+  width: 100%;
+  font-family: "DM Sans", sans-serif;
+  /* with tw config */
+  @apply text-gray-500;
+}
+
+html::-webkit-scrollbar {
+  width: thin;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #f8f4eb;
+  border-radius: 100px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #ffe1e0;
+  border-radius: 100px;
+  border: 6px solid rgba(0, 0, 0, 0.2);
+}
+
+html:hover {
+  scrollbar-color: #ff6b66;
+  overflow-y: auto;
 }

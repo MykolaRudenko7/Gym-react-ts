@@ -1,14 +1,14 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { SelectedPage } from "@/shared/types";
+import { HomeProps } from "../Home";
 //
 //
 //
 //
 //
-export type LinkProps = {
+interface LinkProps extends HomeProps {
   page: string;
   selectedPage: SelectedPage;
-  setSelectedPage: (value: SelectedPage) => void;
 };
 
 export const Link = ({ page, selectedPage, setSelectedPage }: LinkProps) => {

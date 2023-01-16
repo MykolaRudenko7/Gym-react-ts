@@ -8,6 +8,7 @@ import { Benefit } from '../Benefit';
 //
 import BenefitsPageGraphic from '@/assets/BenefitsPageGraphic.png';
 import { AcademicCapIcon, HomeModernIcon, UserGroupIcon } from '@heroicons/react/24/solid';
+import { HomeProps } from '../Home';
 //
 //
 //
@@ -38,9 +39,7 @@ const container = {
 	}
 }
 //
-type BenefitsProps = {
-	setSelectedPage: (value: SelectedPage) => void;
-}
+interface BenefitsProps extends HomeProps { }
 //
 export const Benefits = ({ setSelectedPage }: BenefitsProps) => {
 	return (

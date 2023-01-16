@@ -7,14 +7,14 @@ import { SelectedPage } from '@/shared/types';
 import { Link } from './Link';
 //
 import Logo from '@/assets/Logo.png';
+import { HomeProps } from '../Home';
 //
 //
 //
 //
 //
-type NavbarProps = {
+interface NavbarProps extends HomeProps{
   selectedPage: SelectedPage;
-  setSelectedPage: (value: SelectedPage) => void;
   isTopOfPage: boolean;
 }
 

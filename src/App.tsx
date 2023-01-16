@@ -1,9 +1,11 @@
 import React from "react";
 //
-import { Navbar } from "@/components/Navbar/index";
-import { Home } from "@/components/Home";
 import { Benefits } from "@/components/Benefits";
+import { Home } from "@/components/Home";
+import { Navbar } from "@/components/Navbar/index";
+import { OurClasses } from "./components/OurClasses/insex";
 import { SelectedPage } from "./shared/types";
+import { ContactUs } from "./components/ContactUs";
 //
 //
 //
@@ -39,9 +41,10 @@ function App() {
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage} />
-      <Home
-        setSelectedPage={setSelectedPage} />
-        <Benefits setSelectedPage={setSelectedPage} />
+      <Home setSelectedPage={setSelectedPage} />
+      <Benefits setSelectedPage={setSelectedPage} />
+      <OurClasses setSelectedPage={setSelectedPage} />
+      <ContactUs setSelectedPage={setSelectedPage} />
     </div>
   );
 }
