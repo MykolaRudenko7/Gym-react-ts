@@ -3,9 +3,9 @@ import React from "react";
 import { Benefits } from "@/components/Benefits";
 import { Home } from "@/components/Home";
 import { Navbar } from "@/components/Navbar/index";
+import { ContactUs } from "./components/ContactUs";
 import { OurClasses } from "./components/OurClasses/insex";
 import { SelectedPage } from "./shared/types";
-import { ContactUs } from "./components/ContactUs";
 //
 //
 //
