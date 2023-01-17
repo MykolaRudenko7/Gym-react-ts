@@ -6,7 +6,7 @@ import Logo from '@/assets/Logo.png';
 //
 export const Footer = () => {
 	//
-	const linkStyle = `block my-5 transition duration-500 hover:text-primary-300 visited:text-gray-400`;
+	const linkStyle = `block my-5 transition duration-100 hover:text-primary-500 visited:text-gray-400`;
 	//
 	return (
 		<footer className='bg-primary-100 py-16'>

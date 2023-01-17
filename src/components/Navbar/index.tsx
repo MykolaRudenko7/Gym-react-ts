@@ -63,7 +63,7 @@ export const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: NavbarPro
                 </div>
 
                 <div className={`${flexBetween} gap-8`}>
-                  <p>Sign In</p>
+                  <a href='#' target='_blank' className='transition duration-100 hover:text-primary-500'>Sign In</a>
                   <ActionButton
                     setSelectedPage={setSelectedPage}>Become a Member</ActionButton>
                 </div>
