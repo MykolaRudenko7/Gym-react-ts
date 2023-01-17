@@ -27,11 +27,11 @@ export const Home = ({ setSelectedPage }: HomeProps) => {
 	return (
 		<section
 			id='home'
-			className='gap-16 bg-gray-20 py-10 md:h-full'>
+			className='gap-16 bg-gray-20 py-10 md:h-full md:pb-0' >
 
 			{/* img and main header */}
 			<motion.div
-				className='md:flex mx-auto w-5/6 items-center justify-center md:h-5/6'
+				className='mx-auto w-5/6 items-center justify-center md:flex md:h-5/6'
 				onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
 			>
 
@@ -50,7 +50,7 @@ export const Home = ({ setSelectedPage }: HomeProps) => {
 							visible: { opacity: 1, x: 0 }
 						}}>
 						<div className='relative'>
-							<div className='before:absolute before:-top-20 before: left-20 before:content-evolvetext before:z-[-1]'>
+							<div className='before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext'>
 								<img src={HomePageText} alt="home-page-text" />
 							</div>
 						</div>

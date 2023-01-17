@@ -12,7 +12,6 @@ body,
   height: 100%;
   width: 100%;
   font-family: "DM Sans", sans-serif;
-  /* with tw config */
   @apply text-gray-500;
 }
 
@@ -27,7 +26,6 @@ html::-webkit-scrollbar-track {
 
 html::-webkit-scrollbar-thumb {
   border-radius: 100px;
-  border: 6px solid rgba(0, 0, 0, 0.2);
 }
 
 html:hover {
